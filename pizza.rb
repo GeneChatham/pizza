@@ -1,5 +1,16 @@
 module Pizza
   class Pie
+  	attr_accessor :toppings
+
+  	def initialize(toppings= [])
+  		@toppings = []
+  		if toppings.length == 0
+  			cheese = Topping.new('cheese', vegetarian: true)
+  			@toppings.push(cheese)
+  		else
+  			@toppings = toppings
+  		end
+  	end
 
   end
 
