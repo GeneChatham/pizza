@@ -5,5 +5,12 @@ module Pizza
 
   class Topping
 
-  end
+  	attr_accessor :name
+
+  	def initialize(name)
+  		@name = name
+  	end
+	
+	end
+
 end
